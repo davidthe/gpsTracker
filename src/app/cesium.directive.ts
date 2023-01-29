@@ -19,6 +19,8 @@ export class CesiumDirective implements OnInit {
       fullscreenButton: false,
       vrButton: false,
     });
+
+    viewer.scene.debugShowFramesPerSecond = true;
   }
 
 }
