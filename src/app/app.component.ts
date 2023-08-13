@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { interval, timeInterval } from 'rxjs';
+import { Http } from '@capacitor-community/http';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +11,11 @@ export class AppComponent {
 
 
   constructor(){
-    
+    interval(5000).subscribe(() => {
+      Http.request(
+        {url: "https://httpbin.org/anything",
+         headers: {"sample": "sample"}, method: "GET"}).then(a => console.log(a))
+    });
   // The location object.
   // {
   //     // Longitude in degrees.

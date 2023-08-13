@@ -1,12 +1,15 @@
 module.exports = {
   resolve: {
     fallback: {
-      fs: "empty",
-      Buffer: false,
-      http: "empty",
-      https: "empty",
-      zlib: "empty"
-    }
+      "fs": false,
+      "tls": false,
+      "net": false,
+      "path": false,
+      "zlib": false,
+      "http": false,
+      "https": false,
+      "stream": false,
+      "crypto": false    } 
   },
   module: {
     unknownContextCritical: false
