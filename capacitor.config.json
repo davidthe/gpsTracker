@@ -1,0 +1,13 @@
+{
+  "appId": "com.cesuim.location",
+  "appName": "cesium-angular-example",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist/cesium-angular-example",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}
